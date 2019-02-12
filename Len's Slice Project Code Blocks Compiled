@@ -1,0 +1,41 @@
+# Pizza Toppings List
+toppings = ['pepperoni', 'pineapple', 'cheese', 'sausage', 'olives', 'anchovies', 'mushrooms']
+
+# Pizza Topping Prices List
+prices = [2, 6, 1, 3, 2, 7, 2]
+
+# Number of Pizzas: one topping only
+num_pizzas = len(toppings)
+
+# Pizza Variety Statement
+print('We sell ' + str(num_pizzas) + ' different kinds of pizza!')
+
+# Combining Pizza Prices with Toppings
+pizzas = list(zip(prices, toppings))
+
+# Sorting Pizzas by Price
+pizzas.sort()
+
+# Sorted Pizza List
+print(pizzas)
+
+# Cheapest Pizza Variable
+cheapest_pizza = pizzas[0]
+
+# Priciest Pizza Variable
+priciest_pizza = pizzas[-1]
+
+# Three Cheapest Pizzas Ordered
+three_cheapest = pizzas[0:3]
+print(three_cheapest)
+
+# Two Dollar Pizzas
+num_two_dollar_slices = prices.count(2)
+print(num_two_dollar_slices)
+
+
+# Displays:
+# We sell 7 different kinds of pizza!
+# [(1, 'cheese'), (2, 'mushrooms'), (2, 'olives'), (2, 'pepperoni'), (3, 'sausage'), (6, 'pineapple'), (7, 'anchovies')]
+# [(1, 'cheese'), (2, 'mushrooms'), (2, 'olives')]
+# 3
